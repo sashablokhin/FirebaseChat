@@ -13,6 +13,7 @@
 		AB364CC41C7F0CE20082E90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB364CC31C7F0CE20082E90F /* Assets.xcassets */; };
 		AB364CC71C7F0CE20082E90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB364CC51C7F0CE20082E90F /* LaunchScreen.storyboard */; };
 		AB364CCF1C7F2A950082E90F /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB364CCE1C7F2A950082E90F /* MessagesViewController.swift */; };
+		AB364CD11C7F2C500082E90F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB364CD01C7F2C500082E90F /* Message.swift */; };
 		DA5066C0C99787CC49B5AC93 /* Pods_FirebaseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB368EAEA240AE2281A3B74 /* Pods_FirebaseChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		AB364CC61C7F0CE20082E90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB364CC81C7F0CE20082E90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB364CCE1C7F2A950082E90F /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		AB364CD01C7F2C500082E90F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		EDB368EAEA240AE2281A3B74 /* Pods_FirebaseChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				AB364CBC1C7F0CE20082E90F /* AppDelegate.swift */,
 				AB364CBE1C7F0CE20082E90F /* LoginViewController.swift */,
 				AB364CCE1C7F2A950082E90F /* MessagesViewController.swift */,
+				AB364CD01C7F2C500082E90F /* Message.swift */,
 				AB364CC01C7F0CE20082E90F /* Main.storyboard */,
 				AB364CC31C7F0CE20082E90F /* Assets.xcassets */,
 				AB364CC51C7F0CE20082E90F /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB364CCF1C7F2A950082E90F /* MessagesViewController.swift in Sources */,
+				AB364CD11C7F2C500082E90F /* Message.swift in Sources */,
 				AB364CBF1C7F0CE20082E90F /* LoginViewController.swift in Sources */,
 				AB364CBD1C7F0CE20082E90F /* AppDelegate.swift in Sources */,
 			);

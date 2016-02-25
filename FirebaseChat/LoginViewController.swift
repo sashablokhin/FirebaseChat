@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import JSQMessagesViewController
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
@@ -92,8 +93,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         myRootRef.observeAuthEventWithBlock { (authData) -> Void in
             if authData != nil {
-                self.performSegueWithIdentifier("showMessages", sender: nil)
+                self.performSegueWithIdentifier("showMessages", sender: authData)
             }
+        }
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showMessages" {
+            
+            let nav = segue.destinationViewController as! UINavigationController
+            
+            let vc = nav.viewControllers[0] as! MessagesViewController 
+            vc.user = sender as! FAuthData?
         }
     }
 

@@ -58,12 +58,12 @@
                     <connections>
                         <outlet property="emailTextField" destination="Fh6-p7-1py" id="iui-rU-Dv3"/>
                         <outlet property="passwordTextField" destination="ZXt-V5-rwc" id="gg3-eU-jx4"/>
-                        <segue destination="wqQ-uG-Maz" kind="show" identifier="showMessages" id="qfU-Jm-meT"/>
+                        <segue destination="wqQ-uG-Maz" kind="presentation" identifier="showMessages" id="cXx-Ow-FXa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="418"/>
+            <point key="canvasLocation" x="301" y="440"/>
         </scene>
         <!--Messages View Controller-->
         <scene sceneID="ZAc-b8-7yL">
@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mfr-3L-E9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1358" y="418"/>
+            <point key="canvasLocation" x="749" y="440"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P7I-Vi-pIP">
@@ -102,7 +102,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amt-sa-G36" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="418"/>
+            <point key="canvasLocation" x="749" y="-252"/>
         </scene>
     </scenes>
     <resources>
