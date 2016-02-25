@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="305" y="418"/>
         </scene>
-        <!--View Controller-->
+        <!--Messages View Controller-->
         <scene sceneID="ZAc-b8-7yL">
             <objects>
-                <viewController id="yT6-QY-nOZ" sceneMemberID="viewController">
+                <viewController id="yT6-QY-nOZ" customClass="MessagesViewController" customModule="FirebaseChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NQW-2E-leb"/>
                         <viewControllerLayoutGuide type="bottom" id="emS-lT-Llw"/>
