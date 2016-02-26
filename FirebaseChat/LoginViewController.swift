@@ -106,6 +106,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
             let vc = nav.viewControllers[0] as! MessagesViewController 
             vc.user = sender as! FAuthData?
+            vc.ref = myRootRef
         }
     }
 

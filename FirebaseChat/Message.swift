@@ -12,27 +12,25 @@ import JSQMessagesViewController
 
 class Message : NSObject, JSQMessageData {
     var text_: String
-    var sender_: String
+    var senderId_: String
+    var senderDisplayName_: String
     var date_: NSDate
     var imageUrl_: String?
     
-    convenience init(text: String?, sender: String?) {
-        self.init(text: text, sender: sender, imageUrl: nil)
+    convenience init(text: String?, senderId: String?, senderDisplayName: String?) {
+        self.init(text: text, senderId: senderId, senderDisplayName: senderDisplayName, imageUrl: nil)
     }
     
-    init(text: String?, sender: String?, imageUrl: String?) {
+    init(text: String?, senderId: String?, senderDisplayName: String?, imageUrl: String?) {
         self.text_ = text!
-        self.sender_ = sender!
+        self.senderId_ = senderId!
+        self.senderDisplayName_ = senderDisplayName!
         self.date_ = NSDate()
         self.imageUrl_ = imageUrl
     }
     
     func text() -> String! {
         return text_;
-    }
-    
-    func sender() -> String! {
-        return sender_;
     }
     
     func date() -> NSDate! {
@@ -45,13 +43,13 @@ class Message : NSObject, JSQMessageData {
     
     
     func senderId() -> String! {
-        return NSProcessInfo.processInfo().globallyUniqueString // ??????????
+        return senderId_
         
     }
     
 
     func senderDisplayName() -> String! {
-        return "test"
+        return senderDisplayName_
     }
     
 
@@ -59,14 +57,11 @@ class Message : NSObject, JSQMessageData {
         return false
     }
     
-    /**
-     *  @return An integer that can be used as a table address in a hash table structure.
-     *
-     *  @discussion This value must be unique for each message with distinct contents.
-     *  This value is used to cache layout information in the collection view.
-     */
+    
     func messageHash() -> UInt {
-        return 0 /// ?????????????????
+        //let contentHash = self.isMediaMessage() ? self.image_?.hash : self.text_.hash
+        let contentHash = self.text_.hash
+        return UInt(abs(self.senderId_.hash ^ self.date_.hash ^ contentHash))
     }
 }
 
